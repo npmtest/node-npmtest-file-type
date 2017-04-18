@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-file-type/file-type/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-file-type/node_modules/file-type/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,27 +192,27 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-file-type">npmtest-file-type (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-file-type/file-type/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-file-type/node_modules/file-type/index.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">0.76% <small>(1 / 132)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">0.75% <small>(1 / 134)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">0% <small>(0 / 581)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 587)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
         Functions: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">0.78% <small>(1 / 129)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">0.76% <small>(1 / 131)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-file-type/file-type/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-file-type/node_modules/file-type/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -685,7 +683,14 @@
 469
 470
 471
-472</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+472
+473
+474
+475
+476
+477
+478
+479</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -988,6 +993,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1158,193 +1170,193 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 module.exports = input =&gt; {
-<span class="cstat-no" title="statement not covered" >	const buf = new Uint8Array(input);</span>
+<span class="cstat-no" title="statement not covered">	const buf = new Uint8Array(input);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (!(buf &amp;&amp; buf.length &gt; 1)) {</span>
-<span class="cstat-no" title="statement not covered" >		return null;</span>
+<span class="cstat-no" title="statement not covered">	if (!(buf &amp;&amp; buf.length &gt; 1)) {</span>
+<span class="cstat-no" title="statement not covered">		return null;</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0xFF &amp;&amp; buf[1] === 0xD8 &amp;&amp; buf[2] === 0xFF) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0xFF &amp;&amp; buf[1] === 0xD8 &amp;&amp; buf[2] === 0xFF) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'jpg',
 			mime: 'image/jpeg'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x89 &amp;&amp; buf[1] === 0x50 &amp;&amp; buf[2] === 0x4E &amp;&amp; buf[3] === 0x47) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x89 &amp;&amp; buf[1] === 0x50 &amp;&amp; buf[2] === 0x4E &amp;&amp; buf[3] === 0x47) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'png',
 			mime: 'image/png'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x47 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x46) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x47 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x46) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'gif',
 			mime: 'image/gif'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[8] === 0x57 &amp;&amp; buf[9] === 0x45 &amp;&amp; buf[10] === 0x42 &amp;&amp; buf[11] === 0x50) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[8] === 0x57 &amp;&amp; buf[9] === 0x45 &amp;&amp; buf[10] === 0x42 &amp;&amp; buf[11] === 0x50) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'webp',
 			mime: 'image/webp'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x46 &amp;&amp; buf[1] === 0x4C &amp;&amp; buf[2] === 0x49 &amp;&amp; buf[3] === 0x46) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x46 &amp;&amp; buf[1] === 0x4C &amp;&amp; buf[2] === 0x49 &amp;&amp; buf[3] === 0x46) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'flif',
 			mime: 'image/flif'
 		};
 	}
 &nbsp;
-	// needs to be before `tif` check
-<span class="cstat-no" title="statement not covered" >	if (((buf[0] === 0x49 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x2A &amp;&amp; buf[3] === 0x0) || (buf[0] === 0x4D &amp;&amp; buf[1] === 0x4D &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x2A)) &amp;&amp; buf[8] === 0x43 &amp;&amp; buf[9] === 0x52) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+	// Needs to be before `tif` check
+<span class="cstat-no" title="statement not covered">	if (((buf[0] === 0x49 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x2A &amp;&amp; buf[3] === 0x0) || (buf[0] === 0x4D &amp;&amp; buf[1] === 0x4D &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x2A)) &amp;&amp; buf[8] === 0x43 &amp;&amp; buf[9] === 0x52) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'cr2',
 			mime: 'image/x-canon-cr2'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if ((buf[0] === 0x49 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x2A &amp;&amp; buf[3] === 0x0) || (buf[0] === 0x4D &amp;&amp; buf[1] === 0x4D &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x2A)) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if ((buf[0] === 0x49 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x2A &amp;&amp; buf[3] === 0x0) || (buf[0] === 0x4D &amp;&amp; buf[1] === 0x4D &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x2A)) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'tif',
 			mime: 'image/tiff'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x42 &amp;&amp; buf[1] === 0x4D) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x42 &amp;&amp; buf[1] === 0x4D) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'bmp',
 			mime: 'image/bmp'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x49 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0xBC) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x49 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0xBC) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'jxr',
 			mime: 'image/vnd.ms-photo'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x38 &amp;&amp; buf[1] === 0x42 &amp;&amp; buf[2] === 0x50 &amp;&amp; buf[3] === 0x53) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x38 &amp;&amp; buf[1] === 0x42 &amp;&amp; buf[2] === 0x50 &amp;&amp; buf[3] === 0x53) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'psd',
 			mime: 'image/vnd.adobe.photoshop'
 		};
 	}
 &nbsp;
-	// needs to be before `zip` check
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x50 &amp;&amp; buf[1] === 0x4B &amp;&amp; buf[2] === 0x3 &amp;&amp; buf[3] === 0x4 &amp;&amp; buf[30] === 0x6D &amp;&amp; buf[31] === 0x69 &amp;&amp; buf[32] === 0x6D &amp;&amp; buf[33] === 0x65 &amp;&amp; buf[34] === 0x74 &amp;&amp; buf[35] === 0x79 &amp;&amp; buf[36] === 0x70 &amp;&amp; buf[37] === 0x65 &amp;&amp; buf[38] === 0x61 &amp;&amp; buf[39] === 0x70 &amp;&amp; buf[40] === 0x70 &amp;&amp; buf[41] === 0x6C &amp;&amp; buf[42] === 0x69 &amp;&amp; buf[43] === 0x63 &amp;&amp; buf[44] === 0x61 &amp;&amp; buf[45] === 0x74 &amp;&amp; buf[46] === 0x69 &amp;&amp; buf[47] === 0x6F &amp;&amp; buf[48] === 0x6E &amp;&amp; buf[49] === 0x2F &amp;&amp; buf[50] === 0x65 &amp;&amp; buf[51] === 0x70 &amp;&amp; buf[52] === 0x75 &amp;&amp; buf[53] === 0x62 &amp;&amp; buf[54] === 0x2B &amp;&amp; buf[55] === 0x7A &amp;&amp; buf[56] === 0x69 &amp;&amp; buf[57] === 0x70) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+	// Needs to be before `zip` check
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x50 &amp;&amp; buf[1] === 0x4B &amp;&amp; buf[2] === 0x3 &amp;&amp; buf[3] === 0x4 &amp;&amp; buf[30] === 0x6D &amp;&amp; buf[31] === 0x69 &amp;&amp; buf[32] === 0x6D &amp;&amp; buf[33] === 0x65 &amp;&amp; buf[34] === 0x74 &amp;&amp; buf[35] === 0x79 &amp;&amp; buf[36] === 0x70 &amp;&amp; buf[37] === 0x65 &amp;&amp; buf[38] === 0x61 &amp;&amp; buf[39] === 0x70 &amp;&amp; buf[40] === 0x70 &amp;&amp; buf[41] === 0x6C &amp;&amp; buf[42] === 0x69 &amp;&amp; buf[43] === 0x63 &amp;&amp; buf[44] === 0x61 &amp;&amp; buf[45] === 0x74 &amp;&amp; buf[46] === 0x69 &amp;&amp; buf[47] === 0x6F &amp;&amp; buf[48] === 0x6E &amp;&amp; buf[49] === 0x2F &amp;&amp; buf[50] === 0x65 &amp;&amp; buf[51] === 0x70 &amp;&amp; buf[52] === 0x75 &amp;&amp; buf[53] === 0x62 &amp;&amp; buf[54] === 0x2B &amp;&amp; buf[55] === 0x7A &amp;&amp; buf[56] === 0x69 &amp;&amp; buf[57] === 0x70) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'epub',
 			mime: 'application/epub+zip'
 		};
 	}
 &nbsp;
-	// needs to be before `zip` check
+	// Needs to be before `zip` check
 	// assumes signed .xpi from addons.mozilla.org
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x50 &amp;&amp; buf[1] === 0x4B &amp;&amp; buf[2] === 0x3 &amp;&amp; buf[3] === 0x4 &amp;&amp; buf[30] === 0x4D &amp;&amp; buf[31] === 0x45 &amp;&amp; buf[32] === 0x54 &amp;&amp; buf[33] === 0x41 &amp;&amp; buf[34] === 0x2D &amp;&amp; buf[35] === 0x49 &amp;&amp; buf[36] === 0x4E &amp;&amp; buf[37] === 0x46 &amp;&amp; buf[38] === 0x2F &amp;&amp; buf[39] === 0x6D &amp;&amp; buf[40] === 0x6F &amp;&amp; buf[41] === 0x7A &amp;&amp; buf[42] === 0x69 &amp;&amp; buf[43] === 0x6C &amp;&amp; buf[44] === 0x6C &amp;&amp; buf[45] === 0x61 &amp;&amp; buf[46] === 0x2E &amp;&amp; buf[47] === 0x72 &amp;&amp; buf[48] === 0x73 &amp;&amp; buf[49] === 0x61) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x50 &amp;&amp; buf[1] === 0x4B &amp;&amp; buf[2] === 0x3 &amp;&amp; buf[3] === 0x4 &amp;&amp; buf[30] === 0x4D &amp;&amp; buf[31] === 0x45 &amp;&amp; buf[32] === 0x54 &amp;&amp; buf[33] === 0x41 &amp;&amp; buf[34] === 0x2D &amp;&amp; buf[35] === 0x49 &amp;&amp; buf[36] === 0x4E &amp;&amp; buf[37] === 0x46 &amp;&amp; buf[38] === 0x2F &amp;&amp; buf[39] === 0x6D &amp;&amp; buf[40] === 0x6F &amp;&amp; buf[41] === 0x7A &amp;&amp; buf[42] === 0x69 &amp;&amp; buf[43] === 0x6C &amp;&amp; buf[44] === 0x6C &amp;&amp; buf[45] === 0x61 &amp;&amp; buf[46] === 0x2E &amp;&amp; buf[47] === 0x72 &amp;&amp; buf[48] === 0x73 &amp;&amp; buf[49] === 0x61) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'xpi',
 			mime: 'application/x-xpinstall'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x50 &amp;&amp; buf[1] === 0x4B &amp;&amp; (buf[2] === 0x3 || buf[2] === 0x5 || buf[2] === 0x7) &amp;&amp; (buf[3] === 0x4 || buf[3] === 0x6 || buf[3] === 0x8)) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x50 &amp;&amp; buf[1] === 0x4B &amp;&amp; (buf[2] === 0x3 || buf[2] === 0x5 || buf[2] === 0x7) &amp;&amp; (buf[3] === 0x4 || buf[3] === 0x6 || buf[3] === 0x8)) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'zip',
 			mime: 'application/zip'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[257] === 0x75 &amp;&amp; buf[258] === 0x73 &amp;&amp; buf[259] === 0x74 &amp;&amp; buf[260] === 0x61 &amp;&amp; buf[261] === 0x72) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[257] === 0x75 &amp;&amp; buf[258] === 0x73 &amp;&amp; buf[259] === 0x74 &amp;&amp; buf[260] === 0x61 &amp;&amp; buf[261] === 0x72) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'tar',
 			mime: 'application/x-tar'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x52 &amp;&amp; buf[1] === 0x61 &amp;&amp; buf[2] === 0x72 &amp;&amp; buf[3] === 0x21 &amp;&amp; buf[4] === 0x1A &amp;&amp; buf[5] === 0x7 &amp;&amp; (buf[6] === 0x0 || buf[6] === 0x1)) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x52 &amp;&amp; buf[1] === 0x61 &amp;&amp; buf[2] === 0x72 &amp;&amp; buf[3] === 0x21 &amp;&amp; buf[4] === 0x1A &amp;&amp; buf[5] === 0x7 &amp;&amp; (buf[6] === 0x0 || buf[6] === 0x1)) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'rar',
 			mime: 'application/x-rar-compressed'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x1F &amp;&amp; buf[1] === 0x8B &amp;&amp; buf[2] === 0x8) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x1F &amp;&amp; buf[1] === 0x8B &amp;&amp; buf[2] === 0x8) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'gz',
 			mime: 'application/gzip'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x42 &amp;&amp; buf[1] === 0x5A &amp;&amp; buf[2] === 0x68) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x42 &amp;&amp; buf[1] === 0x5A &amp;&amp; buf[2] === 0x68) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'bz2',
 			mime: 'application/x-bzip2'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x37 &amp;&amp; buf[1] === 0x7A &amp;&amp; buf[2] === 0xBC &amp;&amp; buf[3] === 0xAF &amp;&amp; buf[4] === 0x27 &amp;&amp; buf[5] === 0x1C) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x37 &amp;&amp; buf[1] === 0x7A &amp;&amp; buf[2] === 0xBC &amp;&amp; buf[3] === 0xAF &amp;&amp; buf[4] === 0x27 &amp;&amp; buf[5] === 0x1C) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: '7z',
 			mime: 'application/x-7z-compressed'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x78 &amp;&amp; buf[1] === 0x01) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x78 &amp;&amp; buf[1] === 0x01) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'dmg',
 			mime: 'application/x-apple-diskimage'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (</span>
+<span class="cstat-no" title="statement not covered">	if (</span>
 		(buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x0 &amp;&amp; (buf[3] === 0x18 || buf[3] === 0x20) &amp;&amp; buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70) ||
 		(buf[0] === 0x33 &amp;&amp; buf[1] === 0x67 &amp;&amp; buf[2] === 0x70 &amp;&amp; buf[3] === 0x35) ||
 		(buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x1C &amp;&amp; buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70 &amp;&amp; buf[8] === 0x6D &amp;&amp; buf[9] === 0x70 &amp;&amp; buf[10] === 0x34 &amp;&amp; buf[11] === 0x32 &amp;&amp; buf[16] === 0x6D &amp;&amp; buf[17] === 0x70 &amp;&amp; buf[18] === 0x34 &amp;&amp; buf[19] === 0x31 &amp;&amp; buf[20] === 0x6D &amp;&amp; buf[21] === 0x70 &amp;&amp; buf[22] === 0x34 &amp;&amp; buf[23] === 0x32 &amp;&amp; buf[24] === 0x69 &amp;&amp; buf[25] === 0x73 &amp;&amp; buf[26] === 0x6F &amp;&amp; buf[27] === 0x6D) ||
 		(buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x1C &amp;&amp; buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70 &amp;&amp; buf[8] === 0x69 &amp;&amp; buf[9] === 0x73 &amp;&amp; buf[10] === 0x6F &amp;&amp; buf[11] === 0x6D) ||
-		(buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x1c &amp;&amp; buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70 &amp;&amp; buf[8] === 0x6D &amp;&amp; buf[9] === 0x70 &amp;&amp; buf[10] === 0x34 &amp;&amp; buf[11] === 0x32 &amp;&amp; buf[12] === 0x0 &amp;&amp; buf[13] === 0x0 &amp;&amp; buf[14] === 0x0 &amp;&amp; buf[15] === 0x0)
+		(buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x1C &amp;&amp; buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70 &amp;&amp; buf[8] === 0x6D &amp;&amp; buf[9] === 0x70 &amp;&amp; buf[10] === 0x34 &amp;&amp; buf[11] === 0x32 &amp;&amp; buf[12] === 0x0 &amp;&amp; buf[13] === 0x0 &amp;&amp; buf[14] === 0x0 &amp;&amp; buf[15] === 0x0)
 	) {
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'mp4',
 			mime: 'video/mp4'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if ((buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x1C &amp;&amp; buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70 &amp;&amp; buf[8] === 0x4D &amp;&amp; buf[9] === 0x34 &amp;&amp; buf[10] === 0x56)) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if ((buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x1C &amp;&amp; buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70 &amp;&amp; buf[8] === 0x4D &amp;&amp; buf[9] === 0x34 &amp;&amp; buf[10] === 0x56)) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'm4v',
 			mime: 'video/x-m4v'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x4D &amp;&amp; buf[1] === 0x54 &amp;&amp; buf[2] === 0x68 &amp;&amp; buf[3] === 0x64) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x4D &amp;&amp; buf[1] === 0x54 &amp;&amp; buf[2] === 0x68 &amp;&amp; buf[3] === 0x64) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'mid',
 			mime: 'audio/midi'
 		};
 	}
 &nbsp;
 	// https://github.com/threatstack/libmagic/blob/master/magic/Magdir/matroska
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x1A &amp;&amp; buf[1] === 0x45 &amp;&amp; buf[2] === 0xDF &amp;&amp; buf[3] === 0xA3) {</span>
-<span class="cstat-no" title="statement not covered" >		const sliced = buf.subarray(4, 4 + 4096);</span>
-<span class="cstat-no" title="statement not covered" >		const idPos = sliced.findIndex((el, i, arr) =&gt; <span class="cstat-no" title="statement not covered" >arr[i] === 0x42 &amp;&amp; arr[i + 1] === 0x82)</span>;</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x1A &amp;&amp; buf[1] === 0x45 &amp;&amp; buf[2] === 0xDF &amp;&amp; buf[3] === 0xA3) {</span>
+<span class="cstat-no" title="statement not covered">		const sliced = buf.subarray(4, 4 + 4096);</span>
+<span class="cstat-no" title="statement not covered">		const idPos = sliced.findIndex((el, i, arr) =&gt; <span class="cstat-no" title="statement not covered">arr[i] === 0x42 &amp;&amp; arr[i + 1] === 0x82)</span>;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		if (idPos &gt;= 0) {</span>
-<span class="cstat-no" title="statement not covered" >			const docTypePos = idPos + 3;</span>
-<span class="cstat-no" title="statement not covered" >			const findDocType = type =&gt; <span class="cstat-no" title="statement not covered" >Array.from(type).every((c, i) =&gt; <span class="cstat-no" title="statement not covered" >sliced[docTypePos + i] === c.charCodeAt(0))</span>;</span></span>
+<span class="cstat-no" title="statement not covered">		if (idPos &gt;= 0) {</span>
+<span class="cstat-no" title="statement not covered">			const docTypePos = idPos + 3;</span>
+<span class="cstat-no" title="statement not covered">			const findDocType = type =&gt; <span class="cstat-no" title="statement not covered">Array.from(type).every((c, i) =&gt; <span class="cstat-no" title="statement not covered">sliced[docTypePos + i] === c.charCodeAt(0))</span>;</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			if (findDocType('matroska')) {</span>
-<span class="cstat-no" title="statement not covered" >				return {</span>
+<span class="cstat-no" title="statement not covered">			if (findDocType('matroska')) {</span>
+<span class="cstat-no" title="statement not covered">				return {</span>
 					ext: 'mkv',
 					mime: 'video/x-matroska'
 				};
 			}
-<span class="cstat-no" title="statement not covered" >			if (findDocType('webm')) {</span>
-<span class="cstat-no" title="statement not covered" >				return {</span>
+<span class="cstat-no" title="statement not covered">			if (findDocType('webm')) {</span>
+<span class="cstat-no" title="statement not covered">				return {</span>
 					ext: 'webm',
 					mime: 'video/webm'
 				};
@@ -1352,139 +1364,146 @@ module.exports = input =&gt; {
 		}
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x14 &amp;&amp; buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x0 &amp;&amp; buf[3] === 0x14 &amp;&amp; buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'mov',
 			mime: 'video/quicktime'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x52 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x46 &amp;&amp; buf[3] === 0x46 &amp;&amp; buf[8] === 0x41 &amp;&amp; buf[9] === 0x56 &amp;&amp; buf[10] === 0x49) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x52 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x46 &amp;&amp; buf[3] === 0x46 &amp;&amp; buf[8] === 0x41 &amp;&amp; buf[9] === 0x56 &amp;&amp; buf[10] === 0x49) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'avi',
 			mime: 'video/x-msvideo'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x30 &amp;&amp; buf[1] === 0x26 &amp;&amp; buf[2] === 0xB2 &amp;&amp; buf[3] === 0x75 &amp;&amp; buf[4] === 0x8E &amp;&amp; buf[5] === 0x66 &amp;&amp; buf[6] === 0xCF &amp;&amp; buf[7] === 0x11 &amp;&amp; buf[8] === 0xA6 &amp;&amp; buf[9] === 0xD9) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x30 &amp;&amp; buf[1] === 0x26 &amp;&amp; buf[2] === 0xB2 &amp;&amp; buf[3] === 0x75 &amp;&amp; buf[4] === 0x8E &amp;&amp; buf[5] === 0x66 &amp;&amp; buf[6] === 0xCF &amp;&amp; buf[7] === 0x11 &amp;&amp; buf[8] === 0xA6 &amp;&amp; buf[9] === 0xD9) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'wmv',
 			mime: 'video/x-ms-wmv'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x1 &amp;&amp; buf[3].toString(16)[0] === 'b') {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x0 &amp;&amp; buf[1] === 0x0 &amp;&amp; buf[2] === 0x1 &amp;&amp; buf[3].toString(16)[0] === 'b') {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'mpg',
 			mime: 'video/mpeg'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if ((buf[0] === 0x49 &amp;&amp; buf[1] === 0x44 &amp;&amp; buf[2] === 0x33) || (buf[0] === 0xFF &amp;&amp; buf[1] === 0xfb)) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if ((buf[0] === 0x49 &amp;&amp; buf[1] === 0x44 &amp;&amp; buf[2] === 0x33) || (buf[0] === 0xFF &amp;&amp; buf[1] === 0xFB)) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'mp3',
 			mime: 'audio/mpeg'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if ((buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70 &amp;&amp; buf[8] === 0x4D &amp;&amp; buf[9] === 0x34 &amp;&amp; buf[10] === 0x41) || (buf[0] === 0x4D &amp;&amp; buf[1] === 0x34 &amp;&amp; buf[2] === 0x41 &amp;&amp; buf[3] === 0x20)) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if ((buf[4] === 0x66 &amp;&amp; buf[5] === 0x74 &amp;&amp; buf[6] === 0x79 &amp;&amp; buf[7] === 0x70 &amp;&amp; buf[8] === 0x4D &amp;&amp; buf[9] === 0x34 &amp;&amp; buf[10] === 0x41) || (buf[0] === 0x4D &amp;&amp; buf[1] === 0x34 &amp;&amp; buf[2] === 0x41 &amp;&amp; buf[3] === 0x20)) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'm4a',
 			mime: 'audio/m4a'
 		};
 	}
 &nbsp;
-	// needs to be before `ogg` check
-<span class="cstat-no" title="statement not covered" >	if (buf[28] === 0x4F &amp;&amp; buf[29] === 0x70 &amp;&amp; buf[30] === 0x75 &amp;&amp; buf[31] === 0x73 &amp;&amp; buf[32] === 0x48 &amp;&amp; buf[33] === 0x65 &amp;&amp; buf[34] === 0x61 &amp;&amp; buf[35] === 0x64) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+	// Needs to be before `ogg` check
+<span class="cstat-no" title="statement not covered">	if (buf[28] === 0x4F &amp;&amp; buf[29] === 0x70 &amp;&amp; buf[30] === 0x75 &amp;&amp; buf[31] === 0x73 &amp;&amp; buf[32] === 0x48 &amp;&amp; buf[33] === 0x65 &amp;&amp; buf[34] === 0x61 &amp;&amp; buf[35] === 0x64) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'opus',
 			mime: 'audio/opus'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x4F &amp;&amp; buf[1] === 0x67 &amp;&amp; buf[2] === 0x67 &amp;&amp; buf[3] === 0x53) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x4F &amp;&amp; buf[1] === 0x67 &amp;&amp; buf[2] === 0x67 &amp;&amp; buf[3] === 0x53) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'ogg',
 			mime: 'audio/ogg'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x66 &amp;&amp; buf[1] === 0x4C &amp;&amp; buf[2] === 0x61 &amp;&amp; buf[3] === 0x43) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x66 &amp;&amp; buf[1] === 0x4C &amp;&amp; buf[2] === 0x61 &amp;&amp; buf[3] === 0x43) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'flac',
 			mime: 'audio/x-flac'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x52 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x46 &amp;&amp; buf[3] === 0x46 &amp;&amp; buf[8] === 0x57 &amp;&amp; buf[9] === 0x41 &amp;&amp; buf[10] === 0x56 &amp;&amp; buf[11] === 0x45) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x52 &amp;&amp; buf[1] === 0x49 &amp;&amp; buf[2] === 0x46 &amp;&amp; buf[3] === 0x46 &amp;&amp; buf[8] === 0x57 &amp;&amp; buf[9] === 0x41 &amp;&amp; buf[10] === 0x56 &amp;&amp; buf[11] === 0x45) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'wav',
 			mime: 'audio/x-wav'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x23 &amp;&amp; buf[1] === 0x21 &amp;&amp; buf[2] === 0x41 &amp;&amp; buf[3] === 0x4D &amp;&amp; buf[4] === 0x52 &amp;&amp; buf[5] === 0x0A) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x23 &amp;&amp; buf[1] === 0x21 &amp;&amp; buf[2] === 0x41 &amp;&amp; buf[3] === 0x4D &amp;&amp; buf[4] === 0x52 &amp;&amp; buf[5] === 0x0A) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'amr',
 			mime: 'audio/amr'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x25 &amp;&amp; buf[1] === 0x50 &amp;&amp; buf[2] === 0x44 &amp;&amp; buf[3] === 0x46) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x25 &amp;&amp; buf[1] === 0x50 &amp;&amp; buf[2] === 0x44 &amp;&amp; buf[3] === 0x46) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'pdf',
 			mime: 'application/pdf'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x4D &amp;&amp; buf[1] === 0x5A) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x4D &amp;&amp; buf[1] === 0x5A) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'exe',
 			mime: 'application/x-msdownload'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if ((buf[0] === 0x43 || buf[0] === 0x46) &amp;&amp; buf[1] === 0x57 &amp;&amp; buf[2] === 0x53) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if ((buf[0] === 0x43 || buf[0] === 0x46) &amp;&amp; buf[1] === 0x57 &amp;&amp; buf[2] === 0x53) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'swf',
 			mime: 'application/x-shockwave-flash'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x7B &amp;&amp; buf[1] === 0x5C &amp;&amp; buf[2] === 0x72 &amp;&amp; buf[3] === 0x74 &amp;&amp; buf[4] === 0x66) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x7B &amp;&amp; buf[1] === 0x5C &amp;&amp; buf[2] === 0x72 &amp;&amp; buf[3] === 0x74 &amp;&amp; buf[4] === 0x66) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'rtf',
 			mime: 'application/rtf'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x00 &amp;&amp; buf[1] === 0x61 &amp;&amp; buf[2] === 0x73 &amp;&amp; buf[3] === 0x6D) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
+			ext: 'wasm',
+			mime: 'application/wasm'
+		};
+	}
+&nbsp;
+<span class="cstat-no" title="statement not covered">	if (</span>
 		(buf[0] === 0x77 &amp;&amp; buf[1] === 0x4F &amp;&amp; buf[2] === 0x46 &amp;&amp; buf[3] === 0x46) &amp;&amp;
 		(
 			(buf[4] === 0x00 &amp;&amp; buf[5] === 0x01 &amp;&amp; buf[6] === 0x00 &amp;&amp; buf[7] === 0x00) ||
 			(buf[4] === 0x4F &amp;&amp; buf[5] === 0x54 &amp;&amp; buf[6] === 0x54 &amp;&amp; buf[7] === 0x4F)
 		)
 	) {
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'woff',
 			mime: 'application/font-woff'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (</span>
+<span class="cstat-no" title="statement not covered">	if (</span>
 		(buf[0] === 0x77 &amp;&amp; buf[1] === 0x4F &amp;&amp; buf[2] === 0x46 &amp;&amp; buf[3] === 0x32) &amp;&amp;
 		(
 			(buf[4] === 0x00 &amp;&amp; buf[5] === 0x01 &amp;&amp; buf[6] === 0x00 &amp;&amp; buf[7] === 0x00) ||
 			(buf[4] === 0x4F &amp;&amp; buf[5] === 0x54 &amp;&amp; buf[6] === 0x54 &amp;&amp; buf[7] === 0x4F)
 		)
 	) {
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'woff2',
 			mime: 'application/font-woff'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (</span>
+<span class="cstat-no" title="statement not covered">	if (</span>
 		(buf[34] === 0x4C &amp;&amp; buf[35] === 0x50) &amp;&amp;
 		(
 			(buf[8] === 0x00 &amp;&amp; buf[9] === 0x00 &amp;&amp; buf[10] === 0x01) ||
@@ -1492,146 +1511,147 @@ module.exports = input =&gt; {
 			(buf[8] === 0x02 &amp;&amp; buf[9] === 0x00 &amp;&amp; buf[10] === 0x02)
 		)
 	) {
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'eot',
 			mime: 'application/octet-stream'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x00 &amp;&amp; buf[1] === 0x01 &amp;&amp; buf[2] === 0x00 &amp;&amp; buf[3] === 0x00 &amp;&amp; buf[4] === 0x00) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x00 &amp;&amp; buf[1] === 0x01 &amp;&amp; buf[2] === 0x00 &amp;&amp; buf[3] === 0x00 &amp;&amp; buf[4] === 0x00) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'ttf',
 			mime: 'application/font-sfnt'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x4F &amp;&amp; buf[1] === 0x54 &amp;&amp; buf[2] === 0x54 &amp;&amp; buf[3] === 0x4F &amp;&amp; buf[4] === 0x00) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x4F &amp;&amp; buf[1] === 0x54 &amp;&amp; buf[2] === 0x54 &amp;&amp; buf[3] === 0x4F &amp;&amp; buf[4] === 0x00) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'otf',
 			mime: 'application/font-sfnt'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x00 &amp;&amp; buf[1] === 0x00 &amp;&amp; buf[2] === 0x01 &amp;&amp; buf[3] === 0x00) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x00 &amp;&amp; buf[1] === 0x00 &amp;&amp; buf[2] === 0x01 &amp;&amp; buf[3] === 0x00) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'ico',
 			mime: 'image/x-icon'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x46 &amp;&amp; buf[1] === 0x4C &amp;&amp; buf[2] === 0x56 &amp;&amp; buf[3] === 0x01) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x46 &amp;&amp; buf[1] === 0x4C &amp;&amp; buf[2] === 0x56 &amp;&amp; buf[3] === 0x01) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'flv',
 			mime: 'video/x-flv'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x25 &amp;&amp; buf[1] === 0x21) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x25 &amp;&amp; buf[1] === 0x21) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'ps',
 			mime: 'application/postscript'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0xFD &amp;&amp; buf[1] === 0x37 &amp;&amp; buf[2] === 0x7A &amp;&amp; buf[3] === 0x58 &amp;&amp; buf[4] === 0x5A &amp;&amp; buf[5] === 0x00) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0xFD &amp;&amp; buf[1] === 0x37 &amp;&amp; buf[2] === 0x7A &amp;&amp; buf[3] === 0x58 &amp;&amp; buf[4] === 0x5A &amp;&amp; buf[5] === 0x00) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'xz',
 			mime: 'application/x-xz'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x53 &amp;&amp; buf[1] === 0x51 &amp;&amp; buf[2] === 0x4C &amp;&amp; buf[3] === 0x69) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x53 &amp;&amp; buf[1] === 0x51 &amp;&amp; buf[2] === 0x4C &amp;&amp; buf[3] === 0x69) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'sqlite',
 			mime: 'application/x-sqlite3'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x4E &amp;&amp; buf[1] === 0x45 &amp;&amp; buf[2] === 0x53 &amp;&amp; buf[3] === 0x1A) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x4E &amp;&amp; buf[1] === 0x45 &amp;&amp; buf[2] === 0x53 &amp;&amp; buf[3] === 0x1A) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'nes',
 			mime: 'application/x-nintendo-nes-rom'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x43 &amp;&amp; buf[1] === 0x72 &amp;&amp; buf[2] === 0x32 &amp;&amp; buf[3] === 0x34) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x43 &amp;&amp; buf[1] === 0x72 &amp;&amp; buf[2] === 0x32 &amp;&amp; buf[3] === 0x34) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'crx',
 			mime: 'application/x-google-chrome-extension'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (</span>
+<span class="cstat-no" title="statement not covered">	if (</span>
 		(buf[0] === 0x4D &amp;&amp; buf[1] === 0x53 &amp;&amp; buf[2] === 0x43 &amp;&amp; buf[3] === 0x46) ||
 		(buf[0] === 0x49 &amp;&amp; buf[1] === 0x53 &amp;&amp; buf[2] === 0x63 &amp;&amp; buf[3] === 0x28)
 	) {
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'cab',
 			mime: 'application/vnd.ms-cab-compressed'
 		};
 	}
 &nbsp;
-	// needs to be before `ar` check
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x21 &amp;&amp; buf[1] === 0x3C &amp;&amp; buf[2] === 0x61 &amp;&amp; buf[3] === 0x72 &amp;&amp; buf[4] === 0x63 &amp;&amp; buf[5] === 0x68 &amp;&amp; buf[6] === 0x3E &amp;&amp; buf[7] === 0x0A &amp;&amp; buf[8] === 0x64 &amp;&amp; buf[9] === 0x65 &amp;&amp; buf[10] === 0x62 &amp;&amp; buf[11] === 0x69 &amp;&amp; buf[12] === 0x61 &amp;&amp; buf[13] === 0x6E &amp;&amp; buf[14] === 0x2D &amp;&amp; buf[15] === 0x62 &amp;&amp; buf[16] === 0x69 &amp;&amp; buf[17] === 0x6E &amp;&amp; buf[18] === 0x61 &amp;&amp; buf[19] === 0x72 &amp;&amp; buf[20] === 0x79) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+	// Needs to be before `ar` check
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x21 &amp;&amp; buf[1] === 0x3C &amp;&amp; buf[2] === 0x61 &amp;&amp; buf[3] === 0x72 &amp;&amp; buf[4] === 0x63 &amp;&amp; buf[5] === 0x68 &amp;&amp; buf[6] === 0x3E &amp;&amp; buf[7] === 0x0A &amp;&amp; buf[8] === 0x64 &amp;&amp; buf[9] === 0x65 &amp;&amp; buf[10] === 0x62 &amp;&amp; buf[11] === 0x69 &amp;&amp; buf[12] === 0x61 &amp;&amp; buf[13] === 0x6E &amp;&amp; buf[14] === 0x2D &amp;&amp; buf[15] === 0x62 &amp;&amp; buf[16] === 0x69 &amp;&amp; buf[17] === 0x6E &amp;&amp; buf[18] === 0x61 &amp;&amp; buf[19] === 0x72 &amp;&amp; buf[20] === 0x79) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'deb',
 			mime: 'application/x-deb'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x21 &amp;&amp; buf[1] === 0x3C &amp;&amp; buf[2] === 0x61 &amp;&amp; buf[3] === 0x72 &amp;&amp; buf[4] === 0x63 &amp;&amp; buf[5] === 0x68 &amp;&amp; buf[6] === 0x3E) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x21 &amp;&amp; buf[1] === 0x3C &amp;&amp; buf[2] === 0x61 &amp;&amp; buf[3] === 0x72 &amp;&amp; buf[4] === 0x63 &amp;&amp; buf[5] === 0x68 &amp;&amp; buf[6] === 0x3E) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'ar',
 			mime: 'application/x-unix-archive'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0xED &amp;&amp; buf[1] === 0xAB &amp;&amp; buf[2] === 0xEE &amp;&amp; buf[3] === 0xDB) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0xED &amp;&amp; buf[1] === 0xAB &amp;&amp; buf[2] === 0xEE &amp;&amp; buf[3] === 0xDB) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'rpm',
 			mime: 'application/x-rpm'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (</span>
+<span class="cstat-no" title="statement not covered">	if (</span>
 		(buf[0] === 0x1F &amp;&amp; buf[1] === 0xA0) ||
 		(buf[0] === 0x1F &amp;&amp; buf[1] === 0x9D)
 	) {
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'Z',
 			mime: 'application/x-compress'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x4C &amp;&amp; buf[1] === 0x5A &amp;&amp; buf[2] === 0x49 &amp;&amp; buf[3] === 0x50) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x4C &amp;&amp; buf[1] === 0x5A &amp;&amp; buf[2] === 0x49 &amp;&amp; buf[3] === 0x50) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'lz',
 			mime: 'application/x-lzip'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0xD0 &amp;&amp; buf[1] === 0xCF &amp;&amp; buf[2] === 0x11 &amp;&amp; buf[3] === 0xE0 &amp;&amp; buf[4] === 0xA1 &amp;&amp; buf[5] === 0xB1 &amp;&amp; buf[6] === 0x1A &amp;&amp; buf[7] === 0xE1) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0xD0 &amp;&amp; buf[1] === 0xCF &amp;&amp; buf[2] === 0x11 &amp;&amp; buf[3] === 0xE0 &amp;&amp; buf[4] === 0xA1 &amp;&amp; buf[5] === 0xB1 &amp;&amp; buf[6] === 0x1A &amp;&amp; buf[7] === 0xE1) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'msi',
 			mime: 'application/x-msi'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	if (buf[0] === 0x06 &amp;&amp; buf[1] === 0x0E &amp;&amp; buf[2] === 0x2B &amp;&amp; buf[3] === 0x34 &amp;&amp; buf[4] === 0x02 &amp;&amp; buf[5] === 0x05 &amp;&amp; buf[6] === 0x01 &amp;&amp; buf[7] === 0x01 &amp;&amp; buf[8] === 0x0D &amp;&amp; buf[9] === 0x01 &amp;&amp; buf[10] === 0x02 &amp;&amp; buf[11] === 0x01 &amp;&amp; buf[12] === 0x01 &amp;&amp; buf[13] === 0x02) {</span>
-<span class="cstat-no" title="statement not covered" >		return {</span>
+<span class="cstat-no" title="statement not covered">	if (buf[0] === 0x06 &amp;&amp; buf[1] === 0x0E &amp;&amp; buf[2] === 0x2B &amp;&amp; buf[3] === 0x34 &amp;&amp; buf[4] === 0x02 &amp;&amp; buf[5] === 0x05 &amp;&amp; buf[6] === 0x01 &amp;&amp; buf[7] === 0x01 &amp;&amp; buf[8] === 0x0D &amp;&amp; buf[9] === 0x01 &amp;&amp; buf[10] === 0x02 &amp;&amp; buf[11] === 0x01 &amp;&amp; buf[12] === 0x01 &amp;&amp; buf[13] === 0x02) {</span>
+<span class="cstat-no" title="statement not covered">		return {</span>
 			ext: 'mxf',
 			mime: 'application/mxf'
 		};
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	return null;</span>
+<span class="cstat-no" title="statement not covered">	return null;</span>
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 16:45:11 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 19:43:45 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
