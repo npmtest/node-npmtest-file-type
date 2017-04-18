@@ -1,7 +1,10 @@
-# test coverage for  [file-type (v4.1.0)](https://github.com/sindresorhus/file-type#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-file-type.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-file-type) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-file-type.svg)](https://travis-ci.org/npmtest/node-npmtest-file-type)
+# npmtest-file-type
+
+#### test coverage for  [file-type (v4.2.0)](https://github.com/sindresorhus/file-type#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-file-type.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-file-type) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-file-type.svg)](https://travis-ci.org/npmtest/node-npmtest-file-type)
+
 #### Detect the file type of a Buffer/Uint8Array
 
-[![NPM](https://nodei.co/npm/file-type.png?downloads=true)](https://www.npmjs.com/package/file-type)
+[![NPM](https://nodei.co/npm/file-type.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/file-type)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-file-type/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-file-type/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-file-type/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-file-type/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-file-type/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-file-type/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-file-type/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-file-type/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-file-type/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-file-type/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-file-type%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-file-type/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-file-type/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-file-type/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-file-type/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-file-type%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-file-type/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-file-type/build/test-report.html](https://npmtest.github.io/node-npmtest-file-type/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-file-type/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-file-type/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-file-type/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-file-type/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-file-type/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-file-type/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-file-type/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +37,6 @@
 {
     "author": {
         "name": "Sindre Sorhus",
-        "email": "sindresorhus@gmail.com",
         "url": "sindresorhus.com"
     },
     "bugs": {
@@ -43,8 +51,8 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "690b70293715d7fd39697e38f7a108ebab2551b9",
-        "tarball": "https://registry.npmjs.org/file-type/-/file-type-4.1.0.tgz"
+        "shasum": "3971643aa8fbe4145bdbaefe4d714d8b81ae1849",
+        "tarball": "https://registry.npmjs.org/file-type/-/file-type-4.2.0.tgz"
     },
     "engines": {
         "node": ">=4"
@@ -52,7 +60,7 @@
     "files": [
         "index.js"
     ],
-    "gitHead": "2f2b70264c36d5ffc16a52ad95095dfa72f5ef68",
+    "gitHead": "98ed3a05562e629cbd6da5a8107a52899ddce8b8",
     "homepage": "https://github.com/sindresorhus/file-type#readme",
     "keywords": [
         "mime",
@@ -130,22 +138,21 @@
         "Z",
         "lz",
         "msi",
-        "mxf"
+        "mxf",
+        "wasm",
+        "webassembly"
     ],
     "license": "MIT",
     "maintainers": [
         {
-            "name": "sindresorhus",
-            "email": "sindresorhus@gmail.com"
+            "name": "sindresorhus"
         },
         {
-            "name": "kevva",
-            "email": "kevinmartensson@gmail.com"
+            "name": "kevva"
         }
     ],
     "name": "file-type",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/sindresorhus/file-type.git"
@@ -153,10 +160,7 @@
     "scripts": {
         "test": "xo && ava"
     },
-    "version": "4.1.0",
-    "xo": {
-        "esnext": true
-    }
+    "version": "4.2.0"
 }
 ```
 
